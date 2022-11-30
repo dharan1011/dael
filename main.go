@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"github.com/dharan1011/dael/pkg/el"
+)
 
 func main() {
-	fmt.Println("Hello, World")
+	epoll, err := el.CreateEpoll(1024)
+	if err != nil {
+		panic(err)
+	}
+	epoll.PollEvents(-1)
 }

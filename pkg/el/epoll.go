@@ -1,4 +1,4 @@
-package pkg
+package el
 
 import (
 	"os"

@@ -1,4 +1,4 @@
-package pkg
+package el
 
 type DaEL struct {
 	epoll      *Epoll
